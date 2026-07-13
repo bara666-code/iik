@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basecamp Haikal Gunung Gede Via Putri</title>
+    <meta name="description" content="Basecamp Haikal Gunung Gede via Putri menyediakan tempat istirahat, penitipan logistik, dan layanan pengurusan SIMAKSI resmi TNGGP. Hubungi kami untuk booking pendakian.">
+    <meta name="keywords" content="Basecamp Gunung Gede, Pendakian Gunung Putri, SIMAKSI Gede Pangrango, Basecamp Haikal, Pendakian Jawa Barat">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-stone-900/90 backdrop-blur-md text-white py-4 px-6 md:px-12 flex justify-between items-center transition-all duration-300">
+        <a href="#" class="text-xl font-bold tracking-wider text-emerald-400">BASECAMP HAIKAL</a>
+        
+        <!-- Tombol Menu Mobile (Hamburger) -->
+        <button id="menu-btn" class="block md:hidden text-white focus:outline-none focus:text-emerald-400">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path id="hamburger-icon" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+            </svg>
+        </button>
+
+        <!-- Tautan Navigasi (Desktop & Mobile) -->
+        <div id="nav-links" class="hidden absolute top-full left-0 w-full bg-stone-900/95 flex-col p-6 space-y-4 md:static md:w-auto md:bg-transparent md:flex md:flex-row md:space-y-0 md:p-0 md:space-x-6 text-sm font-medium border-t border-stone-800 md:border-t-0 shadow-lg md:shadow-none">
+            <a href="#tentang" class="hover:text-emerald-400 transition block">Tentang</a>
+            <a href="#fasilitas" class="hover:text-emerald-400 transition block">Fasilitas</a>
+            <a href="#harga" class="hover:text-emerald-400 transition block">Pricelist</a>
+            <a href="#galeri" class="hover:text-emerald-400 transition block">Galeri</a>
+            <a href="https://wa.me/6283817718819?text=Halo%20Admin%20Basecamp%20Haikal!%20Saya%20tertarik%20untuk%20bertanya%20mengenai%20info%20pendakian%20Gunung%20Gede%20via%20Putri.%20Boleh%20minta%20informasinya?" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-center px-4 py-2 rounded-full transition block">Hubungi</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcR78SfdbBkOIN8ZcBybqafueKjdiz1At7HtuVogCPzVOEcobwnCKHx4qzLO9k44oYlkrmWZPt4JjN44zmc');">
+        <div class="text-center text-white px-4">
+            <p class="text-emerald-400 font-semibold tracking-widest uppercase mb-2 text-xs md:text-sm">Gerbang Pendakian Alun-Alun Suryakencana</p>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Gunung Gede Via Putri</h1>
+            <p class="text-base md:text-lg max-w-2xl mx-auto mb-8 text-stone-300">Rest area, logistik, registrasi simaksi, dan tempat istirahat terbaik sebelum menaklukkan megahnya puncak Gede Pangrango.</p>
+            <a href="#tentang" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-8 py-3 rounded-md shadow-lg transition transform hover:-translate-y-0.5 inline-block">Jelajahi Basecamp</a>
+        </div>
+    </header>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="py-20 px-6 md:px-12 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="text-emerald-600 font-bold tracking-wider uppercase text-sm">Selamat Datang</span>
+            <h2 class="text-3xl font-bold mt-2 mb-6">Titik Awal Petualanganmu Dimulai di Sini</h2>
+            <p class="text-stone-600 leading-relaxed mb-4">
+                Jalur Gunung Putri merupakan rute paling favorit bagi para pendaki yang ingin langsung menuju Alun-Alun Suryakencana. Basecamp kami menyediakan tempat beristirahat yang nyaman, aman, dan ramah bagi para pencinta alam sebelum maupun sesudah melakukan pendakian.
+            </p>
+            <p class="text-stone-600 leading-relaxed">
+                Kami siap membantu mempersiapkan kebutuhan logistik, pengecekan simaksi, hingga penyediaan pemandu (guide) lokal berpengalaman agar perjalananmu berjalan lancar.
+            </p>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-xl">
+            <img src="https://backpackerjakarta.com/wp-content/uploads/2025/06/WhatsApp-Image-2025-05-26-at-8.42-1-e1749783910935-900x600.jpeg" alt="Suasana Basecamp Gunung Putri" class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+        </div>
+    </section>
+
+    <!-- Fasilitas Section -->
+    <section id="fasilitas" class="bg-stone-900 text-white py-20 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Fasilitas Basecamp</h2>
+            <p class="text-stone-400 max-w-xl mx-auto">Kami menyediakan fasilitas esensial lengkap untuk memastikan kondisi fisikmu prima sebelum memulai tracking panjang.</p>
+        </div>
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-stone-800 p-6 rounded-lg text-center border border-stone-700">
+                <div class="text-3xl mb-3">🏠</div>
+                <h3 class="font-semibold text-lg mb-1">Area Istirahat</h3>
+                <p class="text-xs text-stone-400">Ruangan luas untuk selonjoran dan tidur.</p>
+            </div>
+            <div class="bg-stone-800 p-6 rounded-lg text-center border border-stone-700">
+                <div class="text-3xl mb-3">🚿</div>
+                <h3 class="font-semibold text-lg mb-1">Toilet & Mandi</h3>
+                <p class="text-xs text-stone-400">Air bersih melimpah khas pegunungan.</p>
+            </div>
+            <div class="bg-stone-800 p-6 rounded-lg text-center border border-stone-700">
+                <div class="text-3xl mb-3">🔌</div>
+                <h3 class="font-semibold text-lg mb-1">Charging Station</h3>
+                <p class="text-xs text-stone-400">Isi daya penuh semua baterai gadget & HP.</p>
+            </div>
+            <div class="bg-stone-800 p-6 rounded-lg text-center border border-stone-700">
+                <div class="text-3xl mb-3">🍛</div>
+                <h3 class="font-semibold text-lg mb-1">Warung Logistik</h3>
+                <p class="text-xs text-stone-400">Makanan hangat dan perlengkapan gas/alat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricelist & SIMAKSI Section -->
+    <section id="harga" class="py-20 px-6 md:px-12 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-emerald-600 font-bold tracking-wider uppercase text-sm">Informasi Biaya</span>
+            <h2 class="text-3xl font-bold mt-2 mb-4">Pricelist SIMAKSI & Paket Basecamp</h2>
+            <p class="text-stone-600 max-w-2xl mx-auto">Estimasi tarif resmi izin masuk konservasi (SIMAKSI) TNGGP dan paket kemudahan administrasi lewat Basecamp Haikal.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Kartu 1: SIMAKSI Mandiri (WNI Weekday) -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-2">SIMAKSI WNI (Weekday)</h3>
+                    <p class="text-xs text-stone-500 mb-6">Tarif resmi per orang untuk pendakian di hari Senin - Jumat.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-extrabold text-stone-900">Rp 29.000</span>
+                        <span class="text-stone-500 text-sm">/ orang</span>
+                    </div>
+                    <hr class="border-stone-100 mb-6">
+                    <ul class="space-y-3 text-sm text-stone-600">
+                        <li class="flex items-start">
+                            <span class="text-emerald-500 mr-2">✓</span> Izin Masuk & Kegiatan Pendakian 2H1M
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-500 mr-2">✓</span> Asuransi Jiwa Resmi TNGGP
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-500 mr-2">✓</span> Hak Akses Jalur via Putri
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-8">
+                    <p class="text-xs text-stone-400 italic">*Belum termasuk jasa urus & fasilitas basecamp.</p>
+                </div>
+            </div>
+
+            <!-- Kartu 2: SIMAKSI Mandiri (WNI Weekend) -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-2">SIMAKSI WNI (Weekend)</h3>
+                    <p class="text-xs text-stone-500 mb-6">Tarif resmi per orang untuk hari Sabtu, Minggu, & Libur Nasional.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-extrabold text-stone-900">Rp 34.000</span>
+                        <span class="text-stone-500 text-sm">/ orang</span>
+                    </div>
+                    <hr class="border-stone-100 mb-6">
+                    <ul class="space-y-3 text-sm text-stone-600">
+                        <li class="flex items-start">
+                            <span class="text-emerald-500 mr-2">✓</span> Izin Masuk & Kegiatan Pendakian 2H1M
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-500 mr-2">✓</span> Asuransi Jiwa Resmi TNGGP
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-500 mr-2">✓</span> Hak Akses Jalur via Putri
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-8">
+                    <p class="text-xs text-stone-400 italic">*Sistem kuota online berlaku, booking jauh-jauh hari.</p>
+                </div>
+            </div>
+
+            <!-- Kartu 3: Paket All-In Basecamp -->
+            <div class="bg-emerald-950 p-8 rounded-2xl shadow-xl text-white flex flex-col justify-between border-2 border-emerald-500 relative transform md:-translate-y-2">
+                <span class="absolute -top-3 right-6 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Paling Praktis</span>
+                <div>
+                    <h3 class="text-xl font-bold mb-2 text-emerald-400">Paket Terima Beres</h3>
+                    <p class="text-xs text-emerald-200/70 mb-6">Jasa urus SIMAKSI kolektif + fasilitas penuh Basecamp Haikal.</p>
+                    <div class="mb-6">
+                        <span class="text-3xl font-extrabold text-white">Hubungi Admin</span>
+                    </div>
+                    <hr class="border-emerald-800 mb-6">
+                    <ul class="space-y-3 text-sm text-emerald-100/90">
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 mr-2">✓</span> <strong>Tiket SIMAKSI Resmi</strong> (Urus admin dibantu tim)
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 mr-2">✓</span> <strong>Free Istirahat di Basecamp</strong> (Sebelum & sesudah naik)
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 mr-2">✓</span> <strong>Free Charge HP & Gadget</strong>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 mr-2">✓</span> <strong>Titip Barang / Logistik</strong> yang aman
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 mr-2">✓</span> Edukasi jalur & pengecekan perlengkapan standar
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-8">
+                    <a href="https://wa.me/6283817718819?text=Halo%20Admin%20Basecamp%20Haikal,%20saya%20ingin%20booking%20Paket%20Terima%20Beres%20untuk%20pendakian%20Gunung%20Gede.%0A%0AFormat%20Booking:%0ANama%20Ketua:%20%0AJumlah%20Personel:%20%0ATanggal%20Pendakian:%20" target="_blank" rel="noopener noreferrer" class="block text-center bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-3 rounded-xl transition duration-300">
+                        Booking via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Catatan Tambahan -->
+        <div class="mt-12 bg-stone-100 p-6 rounded-xl border border-stone-200 text-xs text-stone-600 space-y-1">
+            <p class="font-bold text-stone-800 mb-1">Catatan Penting Calon Pendaki:</p>
+            <p>1. Harga SIMAKSI mandiri di atas mengacu pada tarif resmi Balai Besar TNGGP terbaru untuk WNI (Tarif WNA berbeda).</p>
+            <p>2. Setiap pendaki <strong>wajib</strong> membawa kartu identitas asli (KTP/Kartu Pelajar) and Surat Keterangan Sehat asli pada hari-H.</p>
+            <p>3. Kuota pendakian via Putri sangat terbatas, disarankan melakukan pendaftaran atau koordinasi dengan basecamp minimal 1-2 bulan sebelum keberangkatan.</p>
+        </div>
+    </section>
+
+    <!-- Galeri Visual Section -->
+    <section id="galeri" class="py-20 px-6 md:px-12 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-3">Dokumentasi Jalur & Basecamp</h2>
+            <p class="text-stone-600">Sekilas pemandangan jalur Putri dan suasana kehangatan di area camp.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            
+            <!-- Foto 1 (Rasio 1:1) -->
+            <div class="relative group overflow-hidden rounded-xl shadow-md aspect-square">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcR78SfdbBkOIN8ZcBybqafueKjdiz1At7HtuVogCPzVOEcobwnCKHx4qzLO9k44oYlkrmWZPt4JjN44zmc" alt="Jalur Pendakian via Putri" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+                    <div>
+                        <span class="text-emerald-400 text-xs uppercase font-bold tracking-wider">Lanskap Jalur</span>
+                        <h4 class="text-white font-semibold text-lg">Trek Menuju Puncak Gede</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Foto 2 (Rasio 1:1) - Iik Mode Patung -->
+            <div class="relative group overflow-hidden rounded-xl shadow-md aspect-square">
+                <img src="https://github.com/bara666-code/iik/blob/main/admin.jpg?raw=true" alt="Suasana Kenyamanan Basecamp" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+                    <div>
+                        <span class="text-emerald-400 text-xs uppercase font-bold tracking-wider">Iik</span>
+                        <h4 class="text-white font-semibold text-lg">Iik Mode Patung</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foto 3 (Rasio 1:1) -->
+            <div class="relative group overflow-hidden rounded-xl shadow-md aspect-square">
+                <img src="https://backpackerjakarta.com/wp-content/uploads/2025/06/WhatsApp-Image-2025-05-26-at-.58.42-1-e1749783910935-900x600.jpeg" alt="Campers di Gede Pangrango" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+                    <div>
+                        <span class="text-emerald-400 text-xs uppercase font-bold tracking-wider">Kebersamaan</span>
+                        <h4 class="text-white font-semibold text-lg">Istirahat & Persiapan Tim</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Kontak / Footer Section -->
+    <footer id="kontak" class="bg-stone-950 text-stone-400 py-12 px-6 md:px-12 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Basecamp Gede via Putri</h3>
+                <p class="text-sm leading-relaxed">Jl. Gunung Putri, Desa Sukatani, Kec. Pacet, Kabupaten Cianjur, Jawa Barat.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Kontak & Registrasi</h3>
+                <p class="text-sm">WhatsApp: <a href="https://wa.me/6283817718819?text=Halo%20Admin%20Basecamp%20Haikal!%20Saya%20mendapatkan%20nomor%20ini%20dari%20website%20official%20Basecamp.%20Boleh%20tanya-tanya%20mengenai%20kuota%20SIMAKSI%3F" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-medium">+62 838-1771-8819</a></p>
+                <p class="text-sm mt-1">TikTok: <span class="text-emerald-400 font-medium">@basecamp_haikal_gunung_gede</span></p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Jam Operasional</h3>
+                <p class="text-sm">Buka 24 Jam (Mengikuti regulasi buka-tutup jalur Balai Besar Taman Nasional Gede Pangrango).</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto text-center pt-8 border-t border-stone-900 text-xs">
+            <p>&copy; 2026 Basecamp Haikal Gunung Gede. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Logic JavaScript untuk Hamburger Menu Mobile -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+        });
+
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if(window.innerWidth < 768) {
+                    navLinks.classList.add('hidden');
+                    navLinks.classList.remove('flex');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
