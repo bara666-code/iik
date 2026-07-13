@@ -112,32 +112,29 @@
 
 <script>
 function kirimKeWhatsApp(event) {
-    event.preventDefault(); // Mencegah halaman reload saat submit
+    event.preventDefault();
 
-    // Nomor Admin Basecamp Haikal yang sudah dikonversi ke format internasional (62)
+    // Nomor tujuan tetap menggunakan 6283817718819
     const nomorWhatsApp = "6283817718819"; 
 
-    // Mengambil data input dari form
     const paket = document.getElementById('paket').value;
     const namaKetua = document.getElementById('nama_ketua').value;
     const jumlahPersonel = document.getElementById('jumlah_personel').value;
     const tanggal = document.getElementById('tanggal').value;
 
-    // Mengubah format tanggal dari YYYY-MM-DD menjadi DD/MM/YYYY agar rapi
+    // Mengubah format tanggal menjadi DD/MM/YYYY
     const infoTanggal = tanggal.split('-').reverse().join('/');
 
-    // Menyusun teks chat sesuai format Opsi 1
-    const teksChat = `Halo Admin Basecamp Haikal, saya ingin melakukan *booking* untuk pendakian Gunung Gede. Berikut adalah detail rencana pendakian kami:\n\n` +
-                    `* *Paket Pilihan:* ${paket}\n` +
-                    `* *Nama Ketua:* ${namaKetua}\n` +
-                    `* *Jumlah Personel:* ${jumlahPersonel} orang\n` +
-                    `* *Tanggal Pendakian:* ${infoTanggal}\n\n` +
+    // Isi template chat baru sesuai permintaanmu
+    const teksChat = `Halo Admin Basecamp Haikal, saya ingin melakukan booking untuk pendakian Gunung Gede. Berikut adalah detail rencana pendakian kami:\n\n` +
+                    `Paket Pilihan: ${paket}\n` +
+                    `Nama Ketua: ${namaKetua}\n` +
+                    `Jumlah Personel: ${jumlahPersonel} orang\n` +
+                    `Tanggal Pendakian: ${infoTanggal}\n\n` +
                     `Mohon informasi lebih lanjut mengenai ketersediaan kuota dan langkah pembayaran selanjutnya. Terima kasih!`;
 
-    // Membuat tautan kirim ke WhatsApp secara dinamis
     const urlWhatsApp = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(teksChat)}`;
 
-    // Membuka jendela chat WhatsApp di tab baru
     window.open(urlWhatsApp, '_blank');
 }
 </script>
